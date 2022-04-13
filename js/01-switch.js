@@ -9,6 +9,35 @@
 // const stars = 1;
 // let price;
 
+const stars = Number(prompt("Вітаю. Скільки зірковий готель вас цікавить?"));
+let price = 0;
+
+switch (stars) {
+  case 1:
+  case 2:
+    price = 20;
+    break;
+  
+  case 3:
+    price = 30;
+    break;
+
+  case 4:
+    price = 50;
+    break;
+
+  case 5:
+    price = 100;
+    break;
+    
+  default:
+    console.log("Такого количества звезд нету");
+
+};
+
+console.log(`Вы выбрали отель ${stars} звезд. Цена одной ночи ${price}$`);
+
+
 // if (stars === 1) {
 //   price = 20;
 // } else if (stars === 2) {
@@ -50,25 +79,31 @@
 
 // console.log(price);
 
+
+
+
+
+
+
 /*
  * Напиши скрипт выбора стоимости отеля по кол-ву звёзд.
  * 1,2 - 20$, 3,4 - 30$, 5 - 120$
  */
 
-const stars = 1;
-let price;
+// const stars = 1;
+// let price;
 
-if (stars === 1 || stars === 2) {
-  price = 20;
-} else if (stars === 3 || stars === 4) {
-  price = 30;
-} else if (stars === 5) {
-  price = 120;
-} else {
-  console.log('Такого кол-ва звезд нет');
-}
+// if (stars === 1 || stars === 2) {
+//   price = 20;
+// } else if (stars === 3 || stars === 4) {
+//   price = 30;
+// } else if (stars === 5) {
+//   price = 120;
+// } else {
+//   console.log('Такого кол-ва звезд нет');
+// }
 
-console.log(price);
+// console.log(price);
 
 // switch (stars) {
 //   case 1:
@@ -125,3 +160,12 @@ switch (option) {
 
 // 4. сделать лог message
 console.log(message);
+
+function multiple(a, b) {
+  const c = a * b;
+  return c;
+}
+
+console.log(multiple(2, 3));
+
+
