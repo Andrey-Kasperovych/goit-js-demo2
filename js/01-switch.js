@@ -80,7 +80,9 @@ console.log(`Вы выбрали отель ${stars} звезд. Цена одн
 // console.log(price);
 
 
-
+for (let i = 1; i < 5; i += 1) {
+  console.log(i);
+}
 
 
 
