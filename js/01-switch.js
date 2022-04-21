@@ -188,13 +188,52 @@
 //   console.log(character);
 // }
 
-function getExtremeElements(array) {
-  // Change code below this line
- return [array[0], array[array.length - 1]];
+// function getExtremeElements(array) {
+//   // Change code below this line
+//  return [array[0], array[array.length - 1]];
 
-  // Change code above this line
+//   // Change code above this line
+// }
+
+// getExtremeElements([1, 2, 3, 4, 5]);
+
+// function findLongestWord(string) {
+//   // Change code below this line
+
+//    const massive = string.split(" ");
+//    let longestWord = massive[0];
+
+//    for (let i = 0; i < massive.length; i += 1) {
+     
+//      if (longestWord.length < massive[i].length) {
+//         longestWord = massive[i];
+//      };
+     
+//    };
+//    console.log(longestWord); 
+//    return longestWord;   
+
+//   // Change code above this line
+// }
+
+// findLongestWord("May the force be with you");
+
+function getCommonElements(array1, array2) {
+  // Change code below this line
+
+ let newMassive = [];
+
+ for (let i = 0; i < array1.length; i += 1) {
+   if (array2.includes(array1[i])) {
+     newMassive.push(array1[i]); 
+   }
+ }
+ 
+  console.log(newMassive);
+ return newMassive;
+ // Change code above this line
 }
 
-getExtremeElements([1, 2, 3, 4, 5]);
+getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]);
 
 
