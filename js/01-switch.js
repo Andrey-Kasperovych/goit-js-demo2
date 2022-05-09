@@ -218,22 +218,72 @@
 
 // findLongestWord("May the force be with you");
 
-function getCommonElements(array1, array2) {
-  // Change code below this line
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
 
- let newMassive = [];
+//  let newMassive = [];
 
- for (let i = 0; i < array1.length; i += 1) {
-   if (array2.includes(array1[i])) {
-     newMassive.push(array1[i]); 
-   }
- }
+//  for (let i = 0; i < array1.length; i += 1) {
+//    if (array2.includes(array1[i])) {
+//      newMassive.push(array1[i]); 
+//    }
+//  }
  
-  console.log(newMassive);
- return newMassive;
- // Change code above this line
-}
+//   console.log(newMassive);
+//  return newMassive;
+//  // Change code above this line
+// }
 
-getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]);
+// getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]);
+
+// function foo(array) {
+//   for (let i = 0; i < array.length; i += 1) {
+//      array[i] *= 2;
+//   };
+// }
+
+// let numbers = [3, 2, 1];
+
+// console.log(foo(numbers));
+// console.log(numbers);
+
+// function addToMassive(massive) {
+//   for (const element of massive) {
+//     // massive[arguments.indexOf(argument)] = argument;
+//     console.log(massive.indexOf(element));
+//     console.log(massive[massive.indexOf(element)]);
+//     console.log(`Маємо елемент масиву ${massive[massive.indexOf(element)]} з індексом ${(massive.indexOf(element))}`)
+//   }
+//   console.table(massive);
+// };
+
+// addToMassive([1, 3, 5]);
+
+// const carts = [12, 54, 72, 33, 154, 33, 67, 48];
+
+// let total = 0;
+
+// // for (const cart of carts) {
+// //   total += cart;
+// // }
+
+// for (let i = 0; i < carts.length; i += 1) {
+//   total += carts[i];
+// }
+
+// console.log(total);
+
+const massive = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 11];
+
+let total = 0;
+
+for (let value of massive) {
+  if (value % 2 === 0) {
+    total += value;
+  }
+};
+
+console.log('Total: ', total);
+
 
 
